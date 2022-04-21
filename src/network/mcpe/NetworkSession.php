@@ -419,9 +419,8 @@ class NetworkSession{
 			}
 
 			$this->addToSendBuffer($packet);
-			if($immediate){
-				$this->flushSendBuffer(true);
-			}
+			
+			$this->flushSendBuffer(true);
 
 			return true;
 		}finally{
